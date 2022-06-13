@@ -1,0 +1,279 @@
+.upper-navbar {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.4rem 1rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 7px #00000081;
+          box-shadow: 0 1px 7px #00000081;
+  z-index: 9999;
+}
+
+.n-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ham-menu {
+  cursor: pointer;
+  padding: 1rem 0.8rem;
+  border-radius: 50%;
+  margin-right: 0.15rem;
+  margin-right: 0.15rem;
+  position: relative;
+  left: -7px;
+}
+
+.ham-menu:hover {
+  background: rgba(0, 0, 0, 0.055);
+}
+
+.ham-menu div {
+  width: 19px;
+  height: 2px;
+  background: #5f6368;
+  position: relative;
+  left: 1px;
+}
+
+.ham-menu div:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.main-logo {
+  text-decoration: none;
+}
+
+.main-logo:active > span {
+  -webkit-text-decoration: underline 0.15rem #5f6368;
+          text-decoration: underline 0.15rem #5f6368;
+}
+
+.main-logo span {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #5f6368;
+  font-family: 'Product Sans Regular', sans-serif;
+}
+
+.main-logo img {
+  display: inline-block;
+  height: 24px;
+  width: 74px;
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+
+.n-center {
+  max-width: 720px;
+  width: 100%;
+}
+
+.n-search {
+  position: relative;
+}
+
+.n-search input {
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+  padding: 0.7rem 3rem !important;
+  background: #f1f3f4;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.n-search input:focus {
+  background: white;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.507);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.507);
+}
+
+.n-search input::-webkit-input-placeholder {
+  color: #b6b3b3;
+  font-weight: 300;
+}
+
+.n-search input:-ms-input-placeholder {
+  color: #b6b3b3;
+  font-weight: 300;
+}
+
+.n-search input::-ms-input-placeholder {
+  color: #b6b3b3;
+  font-weight: 300;
+}
+
+.n-search input::placeholder {
+  color: #b6b3b3;
+  font-weight: 300;
+}
+
+.n-s-logo {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  padding: 0.4rem;
+  color: #5f6368;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  line-height: 0;
+}
+
+.n-s-logo:hover {
+  background: rgba(0, 0, 0, 0.055);
+}
+
+.n-s-logo svg {
+  fill: #5f6368;
+}
+
+.n-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.n-apps {
+  margin-right: 1rem;
+}
+
+.n-apps span {
+  padding: 0.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.n-apps span:hover {
+  background: rgba(0, 0, 0, 0.075);
+}
+
+.app-svg {
+  fill: #5f6368;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 5px;
+  left: 0.2px;
+}
+
+.sign-btn {
+  text-decoration: none;
+  color: white;
+  background: #1a73e8;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  padding: 0.42rem 1.29rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sign-btn:hover {
+  opacity: .9;
+}
+
+.sign-btn:focus {
+  opacity: .7;
+}
+
+.google-apps {
+  position: absolute;
+  top: 43px;
+  right: -7px;
+  width: 318px;
+  height: 430px;
+  background: white;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 0.4rem;
+  border: 1px solid #00000036;
+  padding: .8rem;
+  overflow-y: scroll;
+}
+
+.google-apps::-webkit-scrollbar {
+  width: 8px;
+}
+
+.google-apps::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.google-apps::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.149);
+  border-radius: .3rem;
+}
+
+.g-apps-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.g-app {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  -webkit-transition: .1s;
+  transition: .1s;
+  width: 84px;
+  height: 84px;
+}
+
+.g-app:hover {
+  background: #1a73e821;
+}
+
+.g-app img {
+  width: 42px;
+}
+
+.g-app:first-child > img {
+  width: 33.4px;
+}
+
+.g-app p {
+  color: #5f6368;
+  font-size: .75rem;
+  font-family: sans-serif;
+}
+
+.SearchPageComponent {
+  display: none;
+}
+/*# sourceMappingURL=navbar.css.map */

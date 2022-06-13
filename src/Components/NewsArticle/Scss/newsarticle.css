@@ -1,0 +1,147 @@
+.n-article {
+  border: 1px solid rgba(0, 0, 0, 0.155);
+  border-radius: 0.4rem;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+.m-heading {
+  display: block;
+  padding: 16px;
+  padding-right: 132px;
+}
+
+.m-heading:hover h3 {
+  text-decoration: underline;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.m-heading h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #202124;
+  font-family: "Roboto", sans-serif;
+}
+
+.time-stamp {
+  font-size: 0.7rem;
+  font-family: "Roboto", sans-serif;
+  color: #4e4e4e;
+  margin-top: 0.4rem;
+}
+
+.sub-heading {
+  margin-right: 132px;
+  padding: 0 16px;
+  display: block;
+  color: #202124;
+}
+
+.li-item {
+  margin: -12px 0;
+}
+
+.li-dot {
+  background: #4c73e8;
+  width: 4px;
+  height: 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.sub-heading div p {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: black;
+  position: relative;
+  top: -18px;
+  left: 15px;
+}
+
+.sub-heading:hover div p {
+  text-decoration: underline;
+}
+
+.sub-heading .time-stamp {
+  margin-left: 16px;
+  margin-top: -5px;
+}
+
+.time-stamp .fake-dot {
+  margin: 0 8px;
+}
+
+.article-img {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  left: auto;
+  bottom: auto;
+}
+
+.article-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-size: .7rem;
+}
+
+.article-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+}
+
+.article-view a:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article-view img {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
+}
+
+.article-view span {
+  color: #1a73e8;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.article-view span:hover {
+  text-decoration: underline;
+}
+
+.article-view svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.article-view svg:hover {
+  fill: #1a73e8;
+}
+/*# sourceMappingURL=newsarticle.css.map */

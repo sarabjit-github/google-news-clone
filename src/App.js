@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import './Scss/app.css';
+import { Routes, Route } from 'react-router';
+import React, { Component, Suspense, lazy } from 'react';
+import { Navbar, } from './Components';
+import {Loader} from "./Components/Loader/Loader";
+import SearchPage from './Components/SearchPage/SearchPage';
+const News = lazy(() => import('./Components'));
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  apiKey = process.env.REACT_APP_NEWSDATA_KEY;
+  newsApiKey = process.env.REACT_APP_NEWSAPI_KEY;
+  render() {
+    return (
+      <>
+      <div className="app">
+        <Navbar newsApiKey={this.newsApiKey} />
+        {/* <SideNav /> */}
+        <div className="main-container">
+        <Suspense fallback={<Loader />}>
+          <Routes>
+            <Route path="/" element={<News apiKey={this.apiKey} key="top" category="top" />} />
+            <Route exact path="/covid19" element={<News apiKey={this.apiKey} search="covid" />} />
+            <Route exact path="/world" element={<News apiKey={this.apiKey} key="world" category="world" />} />
+            <Route exact path="/business" element={<News apiKey={this.apiKey} key="business" category="business" />} />
+            <Route exact path="/technology" element={<News apiKey={this.apiKey} key="technology" category="technology" />} />
+            <Route exact path="/entertainment" element={<News apiKey={this.apiKey} key="entertainment" category="entertainment" />} />
+            <Route exact path="/health" element={<News apiKey={this.apiKey} key="health" category="health" />} />
+            <Route exact path="/sports" element={<News apiKey={this.apiKey} key="sports" category="sports" />} />
+            <Route exact path="/science" element={<News apiKey={this.apiKey} key="science" category="science" />} />
+            <Route exact path="/searchpage" element={<SearchPage />} />
+          </Routes>
+        </Suspense>
+        </div>
+        
+        
+      </div>
+      </>
+      
+    )
+  }
 }
 
-export default App;

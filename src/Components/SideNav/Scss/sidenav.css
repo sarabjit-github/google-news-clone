@@ -1,0 +1,131 @@
+.side-nav-container {
+  position: fixed;
+  top: 66px;
+  left: 0%;
+  width: 280.5px;
+  height: calc(100vh - 66px);
+  background: white;
+  overflow-y: scroll;
+  z-index: 99;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.side-nav-container::-webkit-scrollbar {
+  display: none;
+}
+
+.side-nav-main {
+  margin-top: .8rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+.link-tag {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #2d2e30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.4rem 0 0.4rem 1.4rem;
+  font-size: .8rem;
+  border-top-right-radius: 1.08rem;
+  border-bottom-right-radius: 1.08rem;
+}
+
+.link-tag:hover {
+  color: #1967d2;
+}
+
+.link-tag.active {
+  color: #1967d2;
+  background: #d2e3fc;
+  font-weight: 500;
+}
+
+.s-n-svg {
+  font-size: .77rem;
+  margin-right: 1.02rem;
+  fill: #5f6368;
+}
+
+.link-tag:hover .s-n-svg {
+  fill: #1967d2;
+}
+
+.link-tag.active .s-n-svg {
+  fill: #1967d2;
+}
+
+.fake-line {
+  border-bottom: 1px solid #dadce0;
+  width: 14.5rem;
+  margin: 0.75rem 1rem;
+}
+
+.lang-tag {
+  font-size: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.4rem 0 0.4rem 1.4rem;
+  text-decoration: none;
+  color: #2d2e30;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.lang-tag:hover, .lang-tag:hover span {
+  color: #1967d2;
+}
+
+.lang-tag span {
+  font-size: .7rem;
+  color: #1c1c1d;
+  font-weight: 500;
+}
+
+.arrow-svg {
+  position: relative;
+  top: 3px;
+  left: 10px;
+}
+
+.link-tag:is(:hover, .active) {
+  fill: #1967d2;
+}
+
+.footer {
+  padding: 0.4rem 0 0.9rem 1.4rem;
+}
+
+.f-tag {
+  text-decoration: none;
+  color: #7a7c7e;
+  font-size: .68rem;
+  font-weight: 300;
+}
+
+.f-tag:hover {
+  color: #000000;
+}
+
+.fake-dot {
+  width: 2px;
+  height: 2px;
+  background: #2d2e30;
+  display: inline-block;
+  margin: 0 .15rem;
+  position: relative;
+  top: -3px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=sidenav.css.map */
