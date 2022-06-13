@@ -9,10 +9,18 @@ const News = lazy(() => import('./Components'));
 export default class App extends Component {
   apiKey = process.env.REACT_APP_NEWSDATA_KEY;
   newsApiKey = process.env.REACT_APP_NEWSAPI_KEY;
+  alertAppInfo(){
+    alert("This is a beta website. There will be bugs, performance issues, and missing content.")
+  }
   render() {
     return (
       <>
       <div className="app">
+
+        <div className="info-button" >
+          <button title='Info' onClick={this.alertAppInfo}>i</button>
+        </div>
+
         <Navbar newsApiKey={this.newsApiKey} />
         {/* <SideNav /> */}
         <div className="main-container">
